@@ -1,40 +1,50 @@
 import pygame
+import sys
+import settings
+import lvl
+import player
+import raycasting
 
-if __name__ == '__main__':
-    pygame.init()
-    pygame.display.set_caption('Движущийся круг 2')
-    size = width, height = 800, 400
-    screen = pygame.display.set_mode(size)
+class Game:
+    def __init__(self):
+        pygame.init()
+        self.screen = pygame.display.set_mode((settings.width, settings.height))
+        self.clock = pygame.time.Clock()
+        self.game_status = True
+        self.start_new_game()
+        self.delta_time = 1
 
-    running = True
-    x_pos = 0
-    v = 20  # пикселей в секунду
-    fps = 144
-    screen.fill((0, 0, 0))
-    screen2 = pygame.Surface(screen.get_size())
-    x1, y1, w, h = 0, 0, 0, 0
-    drawing = False  # режим рисования выключен
-    while running:
+    def start_new_game(self):
+        self.map = lvl.Map(self)
+        self.player = player.Player(self)
+        self.raycasting = raycasting.RayCasting(self)
+
+
+    def update(self):
+        self.player.update()
+        self.raycasting.update()
+        pygame.display.flip()
+        self.delta_time = self.clock.tick(settings.fps)
+        pygame.display.set_caption(f"{int(self.clock.get_fps())}")
+
+    def draw(self):
+        self.screen.fill("black")
+        #self.map.draw()
+        #self.player.draw()
+
+    def check_events(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                running = False
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                drawing = True  # включаем режим рисования
-                # запоминаем координаты одного угла
-                x1, y1 = event.pos
-            if event.type == pygame.MOUSEBUTTONUP:
-                # сохраняем нарисованное (на втором холсте)
-                screen2.blit(screen, (0, 0))
-                drawing = False
-                x1, y1, w, h = 0, 0, 0, 0
-            if event.type == pygame.MOUSEMOTION:
-                # запоминаем текущие размеры
-                if drawing:
-                    w, h = event.pos[0] - x1, event.pos[1] - y1
-        # рисуем на экране сохранённое на втором холсте
-        screen.fill(pygame.Color('black'))
-        screen.blit(screen2, (0, 0))
-        if drawing:  # и, если надо, текущий прямоугольник
-            if w > 0 and h > 0:
-                pygame.draw.rect(screen, (0, 0, 255), ((x1, y1), (w, h)), 5)
-        pygame.display.flip()
+                self.game_status = False
+                #pygame.quit()
+
+    def run(self):
+        while self.game_status:
+            self.check_events()
+            self.update()
+            self.draw()
+
+
+if __name__ == '__main__':
+    game = Game()
+    game.run()
