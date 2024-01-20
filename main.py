@@ -6,6 +6,9 @@ import player
 import raycasting
 import render
 import sprite_object
+import object_creator
+import shotgun
+import sound
 
 
 class Game:
@@ -23,12 +26,15 @@ class Game:
         self.player = player.Player(self)
         self.object_renderer = render.Renderer(self)
         self.raycasting = raycasting.RayCasting(self)
-        self.prop = sprite_object.SpriteObject(self)
+        self.creator = object_creator.ObjectHandler(self)
+        self.shotgun = shotgun.Shotgun(self)
+        self.sound = sound.Sound(self)
 
     def update(self):
         self.player.update()
         self.raycasting.update()
-        self.prop.update()
+        self.creator.update()
+        self.shotgun.update()
         pygame.display.flip()
         self.delta_time = self.clock.tick(settings.fps)
         pygame.display.set_caption(f"{int(self.clock.get_fps())}")
@@ -36,6 +42,7 @@ class Game:
     def draw(self):
         # self.screen.fill("black") # 2д задник
         self.object_renderer.draw()  # --> 3д вид
+        self.shotgun.draw()
         # self.map.draw() # 2д вид
         # self.player.draw() #2д карта
 
@@ -44,6 +51,7 @@ class Game:
             if event.type == pygame.QUIT:
                 self.game_status = False
                 # pygame.quit()
+            self.player.single_fire_event(event)
 
     def run(self):
         while self.game_status:

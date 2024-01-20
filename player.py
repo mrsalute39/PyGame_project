@@ -8,6 +8,14 @@ class Player:
         self.game = game
         self.x, self.y = settings.player_coords
         self.angle = settings.player_angle
+        self.shot = False
+
+    def single_fire_event(self, event):
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            if event.button == 1 and not self.shot and not self.game.shotgun.reloading:
+                self.game.sound.shotgun.play()
+                self.shot = True
+                self.game.shotgun.reloading = True
 
     def movement(self):
         sin_a = sin(self.angle)
