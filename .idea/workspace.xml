@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d5a46b6-38a6-4e34-9d65-6942bbc909de" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject5.iml" afterDir="false" />
+    <list default="true" id="1d5a46b6-38a6-4e34-9d65-6942bbc909de" name="Changes" comment="-альфа версия движка">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bomb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/bomb2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/boom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/car2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/creature.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/gameover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lvl.py" beforeDir="false" afterPath="$PROJECT_DIR$/lvl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raycasting.py" beforeDir="false" afterPath="$PROJECT_DIR$/raycasting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/render.py" beforeDir="false" afterPath="$PROJECT_DIR$/render.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +136,18 @@
       <workItem from="1705431039539" duration="3788000" />
       <workItem from="1705617677757" duration="1026000" />
       <workItem from="1705673146072" duration="11316000" />
+      <workItem from="1705686473223" duration="133000" />
+      <workItem from="1705690890114" duration="418000" />
+      <workItem from="1705749658747" duration="22730000" />
     </task>
+    <task id="LOCAL-00001" summary="-альфа версия движка">
+      <created>1705686575871</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705686575871</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,9 +164,13 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="-альфа версия движка" />
+    <option name="LAST_COMMIT_MESSAGE" value="-альфа версия движка" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PyGame_project$1.coverage" NAME="1 Coverage Results" MODIFIED="1702391324375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PyGame_project$2.coverage" NAME="2 Coverage Results" MODIFIED="1702391335925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PyGame_project$main.coverage" NAME="main Coverage Results" MODIFIED="1705684027328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyGame_project$main.coverage" NAME="main Coverage Results" MODIFIED="1705776684838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
