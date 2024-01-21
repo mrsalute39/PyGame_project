@@ -9,13 +9,33 @@ class Player:
         self.x, self.y = settings.player_coords
         self.angle = settings.player_angle
         self.shot = False
+        self.rel = 0
+        self.health = settings.player_max_health
+        self.health_recovery_delay = 1000
+        self.time_prev = pygame.time.get_ticks()
 
     def single_fire_event(self, event):
         if event.type == pygame.MOUSEBUTTONDOWN:
-            if event.button == 1 and not self.shot and not self.game.shotgun.reloading:
+            if event.button == 1 and not self.shot and not self.game.weapon.reloading:
                 self.game.sound.shotgun.play()
                 self.shot = True
-                self.game.shotgun.reloading = True
+                self.game.weapon.reloading = True
+
+    def get_damage(self, damage):
+        self.health -= damage
+        self.game.object_renderer.player_damage()
+        self.game.sound.player_pain.play()
+        self.game_over()
+
+    def check_health_recovery_delay(self):
+        time_now = pygame.time.get_ticks()
+        if time_now - self.time_prev > self.health_recovery_delay:
+            self.time_prev = time_now
+            return True
+
+    def start_recover_health(self):
+        if self.check_health_recovery_delay() and self.health < settings.player_max_health:
+            self.health += 1
 
     def movement(self):
         sin_a = sin(self.angle)
@@ -48,9 +68,9 @@ class Player:
         self.angle %= tau
 
     def draw(self):
-        # pygame.draw.line(self.game.screen, "red", (self.x * 100, self.y * 100),
-        #                (self.x * 100 + settings.width * cos(self.angle),  # убрать коменты для 2д вида
-        #                  self.y * 100 + settings.width * sin(self.angle)), 2)
+        pygame.draw.line(self.game.screen, "red", (self.x * 100, self.y * 100),
+                         (self.x * 100 + settings.width * cos(self.angle),  # убрать коменты для 2д вида
+                          self.y * 100 + settings.width * sin(self.angle)), 2)
         pygame.draw.circle(self.game.screen, "blue", (self.x * 100, self.y * 100), 15)
 
     def check_wall(self, x, y):
@@ -58,6 +78,15 @@ class Player:
             return True
         else:
             return False
+
+    def game_over(self):
+        if self.health < 1:
+            self.game.object_renderer.game_over()
+            pygame.display.flip()
+            self.game.theme.stop()
+            pygame.time.delay(1500)
+            self.game.start_new_game()
+
 
     def check_collision(self, dx, dy):
         scale = settings.player_size_scale / self.game.delta_time  # фикс ---> шакаливание картинки при
@@ -78,6 +107,7 @@ class Player:
     def update(self):
         self.movement()
         self.mouse_control()
+        self.start_recover_health()
 
     def position(self):
         return self.x, self.y

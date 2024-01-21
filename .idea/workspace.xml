@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d5a46b6-38a6-4e34-9d65-6942bbc909de" name="Changes" comment="-текстурированная версия движка со статическими спрайтами&#10;-как же я заебался&#10;-эмммээээууээээ хд">
+    <list default="true" id="1d5a46b6-38a6-4e34-9d65-6942bbc909de" name="Changes" comment="- добавлен дробовик&#10;- добавлена возможность воспроизводить звуки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sprites/animated_props/burning_barrel/burning_barrel_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/sprites/animated_props/burning_barrel/burning_barrel_0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sprites/animated_props/burning_barrel/burning_barrel_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/sprites/animated_props/burning_barrel/burning_barrel_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sprites/animated_props/burning_barrel/burning_barrel_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/sprites/animated_props/burning_barrel/burning_barrel_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/textures/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/textures/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/textures/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/textures/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/textures/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/textures/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lvl.py" beforeDir="false" afterPath="$PROJECT_DIR$/lvl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/object_creator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprite_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/sprite_object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/render.py" beforeDir="false" afterPath="$PROJECT_DIR$/render.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shotgun.py" beforeDir="false" afterPath="$PROJECT_DIR$/shotgun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound.py" beforeDir="false" afterPath="$PROJECT_DIR$/sound.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +143,8 @@
       <workItem from="1705673146072" duration="11316000" />
       <workItem from="1705686473223" duration="133000" />
       <workItem from="1705690890114" duration="418000" />
-      <workItem from="1705749658747" duration="32249000" />
+      <workItem from="1705749658747" duration="32555000" />
+      <workItem from="1705831349470" duration="26232000" />
     </task>
     <task id="LOCAL-00001" summary="-альфа версия движка">
       <created>1705686575871</created>
@@ -154,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705776936589</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- добавлен дробовик&#10;- добавлена возможность воспроизводить звуки">
+      <created>1705788134117</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705788134117</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,11 +187,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-альфа версия движка" />
     <MESSAGE value="-текстурированная версия движка со статическими спрайтами&#10;-как же я заебался&#10;-эмммээээууээээ хд" />
-    <option name="LAST_COMMIT_MESSAGE" value="-текстурированная версия движка со статическими спрайтами&#10;-как же я заебался&#10;-эмммээээууээээ хд" />
+    <MESSAGE value="- добавлен дробовик&#10;- добавлена возможность воспроизводить звуки" />
+    <option name="LAST_COMMIT_MESSAGE" value="- добавлен дробовик&#10;- добавлена возможность воспроизводить звуки" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PyGame_project$1.coverage" NAME="1 Coverage Results" MODIFIED="1702391324375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PyGame_project$2.coverage" NAME="2 Coverage Results" MODIFIED="1702391335925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PyGame_project$main.coverage" NAME="main Coverage Results" MODIFIED="1705787845997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyGame_project$main.coverage" NAME="main Coverage Results" MODIFIED="1705860399986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

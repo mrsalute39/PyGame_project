@@ -4,13 +4,14 @@ half_width = width // 2
 half_heigth = height // 2
 fps = 0
 
-player_coords = 1.5, 3.5 # --> стартовая позиция
+player_coords = 1.5, 1.5 # --> стартовая позиция
 player_angle = 0
 player_speed = 0.004 # --> скорость перемещения игрока
 player_rot_speed = 0.002 # --> скорость разворота игрока
 player_size_scale = 60
+player_max_health = 100
 
-mouse_sens = 0.0003
+mouse_sens = 0.00015
 mouse_max_rel = 40
 mouse_border_left = 100
 mouse_border_right = width - mouse_border_left
