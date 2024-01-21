@@ -23,7 +23,7 @@ class ObjectHandler:
         # врагов добавлять сюда:
         self.add_enemy(SoldierDoom(game))
         self.add_enemy(SoldierDoom(game, pos=(13.5, 4.5)))
-        self.add_enemy(CacoDemonDoom(game, pos=(6.5, 3.5)))
+        self.add_enemy(CacoDemonDoom(game, pos=(18.5, 10.5)))
 
     def add_sprite(self, sprite):
         self.sprite_list.append(sprite)
