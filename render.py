@@ -7,7 +7,7 @@ class Renderer:
         self.game = game
         self.screen = game.screen
         self.wall_textures = self.load_wall_texture()
-        self.sky_image = self.get_texture("data/textures/hell_sky.png", settings.width, settings.half_heigth)
+        self.sky_image = self.get_texture("data/textures/night_sky.png", settings.width, settings.half_heigth)
         self.sky_offset = 0
         self.damage_screen = self.get_texture("data/textures/damage.png", settings.width, settings.height)
         self.digit_size = 90
@@ -57,8 +57,9 @@ class Renderer:
 
     def load_wall_texture(self):
         textures_dict = {
-            1: self.get_texture("data/textures/1.png", settings.texture_size, settings.texture_size),
-            2: self.get_texture("data/textures/2.png", settings.texture_size, settings.texture_size),  # --- > текстурки равны номеру на карте в матрице уровня
-            3: self.get_texture("data/textures/3.png", settings.texture_size, settings.texture_size)
+            1: self.get_texture("data/textures/531.jpg", settings.texture_size, settings.texture_size),
+            2: self.get_texture("data/textures/crate.png", settings.texture_size, settings.texture_size),# --- > текстурки равны номеру на карте в матрице уровня
+            3: self.get_texture("data/textures/533.jpg", settings.texture_size, settings.texture_size),
+            4: self.get_texture("data/textures/532.png", settings.texture_size, settings.texture_size)
         }
         return textures_dict

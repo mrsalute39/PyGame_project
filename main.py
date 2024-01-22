@@ -8,14 +8,16 @@ import object_creator
 import shotgun
 import sound
 import enemy_behaviour
+from moviepy.editor import *
 
 
 class Game:
     def __init__(self):
         pygame.init()
         pygame.mouse.set_visible(False)
-        self.screen = pygame.display.set_mode((settings.width, settings.height))
+        self.screen = pygame.display.set_mode((settings.width, settings.height), pygame.FULLSCREEN)
         self.clock = pygame.time.Clock()
+
         self.game_status = True
         self.start_new_game()
         self.delta_time = 1
@@ -69,5 +71,13 @@ class Game:
 
 
 if __name__ == '__main__':
+    path = "data/intro.avi"
+    pygame.display.set_caption("""интро""")
+
+    intro = VideoFileClip(path)
+    intro.preview()
+
+    pygame.quit()
+
     game = Game()
     game.run()

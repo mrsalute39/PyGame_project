@@ -5,7 +5,7 @@ from collections import deque
 
 
 class Shotgun(AnimatedSprite):
-    def __init__(self, game, path="data/sprites/weapons/shotgun/shotgun0.png", scale=5, animation_time=90):
+    def __init__(self, game, path="data/sprites/weapons/ultra_shotgun/0.png", scale=0.85, animation_time=50):
         super().__init__(game=game, path=path, scale=scale, animation_time=animation_time)
         self.images =\
             deque([pygame.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))

@@ -18,7 +18,7 @@ class Enemy(AnimatedSprite):
 
         # хар-ки врага
         self.attack_dist = randint(3, 6)
-        self.speed = 0.02
+        self.speed = 0.028
         self.size = 10
         self.health = 100
         self.attack_damage = randint(10, 16)

@@ -1,5 +1,5 @@
 from math import *
-width, height = 1600, 900  # --> разрешение
+width, height = 1920, 1080  # --> разрешение
 half_width = width // 2
 half_heigth = height // 2
 fps = 0
@@ -28,4 +28,4 @@ scale = width // num_rays # --- > колво прямоугольников на
 
 texture_size = 256
 half_texture_size = texture_size // 2
-floor_color = (30, 30, 30)
+floor_color = (50, 50, 50)
