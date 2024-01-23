@@ -13,6 +13,8 @@ class Player:
         self.health = settings.player_max_health
         self.health_recovery_delay = 1000
         self.time_prev = pygame.time.get_ticks()
+        self.orange_key_taken = False
+        self.blue_key_taken = False
 
     def single_fire_event(self, event):
         if event.type == pygame.MOUSEBUTTONDOWN:
@@ -87,6 +89,12 @@ class Player:
             pygame.time.delay(1500)
             self.game.start_new_game()
 
+    def check_orange_key(self):
+        if self.map_pos() == (16, 1):
+            self.orange_key_taken = True
+            self.game.map.layout[25][27] = 0
+        else:
+            pass
 
     def check_collision(self, dx, dy):
         scale = settings.player_size_scale / self.game.delta_time  # фикс ---> шакаливание картинки при
@@ -108,6 +116,7 @@ class Player:
         self.movement()
         self.mouse_control()
         self.start_recover_health()
+        self.check_orange_key()
 
     def position(self):
         return self.x, self.y

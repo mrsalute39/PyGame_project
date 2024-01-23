@@ -199,18 +199,18 @@ class Enemy(AnimatedSprite):
 
 # --- > все враги
 
-class SoldierDoom(Enemy):
-    def __init__(self, game, path="data/sprites/enemy/soldier/0.png", pos=(10.5, 5.5), scale=0.6,
+class Trooper(Enemy):
+    def __init__(self, game, path="data/sprites/enemy/trooper/0001.png", pos=(10.5, 5.5), scale=0.6,
                  shift=0.38, animation_time=180):
         super().__init__(game, path, pos, scale, shift, animation_time)
 
 
-class CacoDemonDoom(Enemy):
-    def __init__(self, game, path="data/sprites/enemy/cacodemon/0.png", pos=(10.5, 5.5), scale=1.0,
+class FastAsFuckBoi(Enemy):
+    def __init__(self, game, path="data/sprites/enemy/fast_boi/0001.png", pos=(10.5, 5.5), scale=0.49,
                  shift=0.25, animation_time=150):
         super().__init__(game, path, pos, scale, shift, animation_time)
         self.attack_dist = 1.0
-        self.health = 150
+        self.health = 50
         self.attack_damage = randint(20, 26)
-        self.speed = 0.04
+        self.speed = 0.085
         self.accuracy = 0.5

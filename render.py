@@ -60,6 +60,10 @@ class Renderer:
             1: self.get_texture("data/textures/531.jpg", settings.texture_size, settings.texture_size),
             2: self.get_texture("data/textures/crate.png", settings.texture_size, settings.texture_size),# --- > текстурки равны номеру на карте в матрице уровня
             3: self.get_texture("data/textures/533.jpg", settings.texture_size, settings.texture_size),
-            4: self.get_texture("data/textures/532.png", settings.texture_size, settings.texture_size)
+            4: self.get_texture("data/textures/532.png", settings.texture_size, settings.texture_size),
+            5: self.get_texture("data/textures/container_blue.png", settings.texture_size, settings.texture_size),
+            6: self.get_texture("data/textures/container_green.jpg", settings.texture_size, settings.texture_size),
+            7: self.get_texture("data/textures/container_violet.jpg", settings.texture_size, settings.texture_size),
+            8: self.get_texture("data/textures/534.png", settings.texture_size, settings.texture_size)
         }
         return textures_dict

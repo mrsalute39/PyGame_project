@@ -26,15 +26,31 @@ class ObjectHandler:
         self.add_sprite(SpriteObject(game, path="data/sprites/props/tv.png", pos=(2.5, 3.5), scale=0.8, shift=0.2))
         self.add_sprite(SpriteObject(game, path="data/sprites/props/main_hero_car.png", pos=(6.0, 1.5), scale=1.0,
                                      shift=0.3))
+        self.add_sprite(SpriteObject(game, path="data/sprites/props/dead_body.png", pos=(11.5, 2.5), scale=0.75, shift=0.25))
 
         # врагов добавлять сюда:
 
-        self.add_enemy(SoldierDoom(game, pos=(13.5, 2.5)))
-        self.add_enemy(SoldierDoom(game, pos=(12.5, 6.5)))
-        self.add_enemy(SoldierDoom(game, pos=(6.75, 17.5)))
-        self.add_enemy(SoldierDoom(game, pos=(13.5, 19.5)))
-        self.add_enemy(SoldierDoom(game, pos=(5.5, 15.5)))
-        self.add_enemy(SoldierDoom(game, pos=(8.5, 15.5)))
+        #self.add_enemy(Trooper(game, pos=(13.5, 2.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(12.5, 6.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(6.75, 17.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(13.5, 19.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(5.5, 15.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(8.5, 15.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(1.5, 23.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(21.5, 19.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(19.5, 16.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(18.5, 3.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(19.5, 3.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(21.5, 3.5), scale=0.75, shift=0.25))
+        #self.add_enemy(Trooper(game, pos=(18.5, 3.5), scale=0.75, shift=0.25))
+
+        #self.add_enemy(FastAsFuckBoi(game, pos=(22.5, 22.5)))
+        #self.add_enemy(FastAsFuckBoi(game, pos=(22.5, 25.5)))
+        #self.add_enemy(FastAsFuckBoi(game, pos=(17.5, 15.5)))
+        #self.add_enemy(FastAsFuckBoi(game, pos=(16.5, 7.5)))
+        #self.add_enemy(FastAsFuckBoi(game, pos=(25.5, 7.5)))
+        #self.add_enemy(FastAsFuckBoi(game, pos=(22.5, 5.5)))
+
 
     def add_sprite(self, sprite):
         self.sprite_list.append(sprite)

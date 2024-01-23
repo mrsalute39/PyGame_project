@@ -71,8 +71,8 @@ class Game:
 
 
 if __name__ == '__main__':
-    path = "data/intro.avi"
-    pygame.display.set_caption("""интро""")
+    path = "data/intro.mp4"
+    pygame.display.set_caption("""ИНТРО""")
 
     intro = VideoFileClip(path)
     intro.preview()
