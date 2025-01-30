@@ -2,18 +2,301 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d5a46b6-38a6-4e34-9d65-6942bbc909de" name="Changes" comment="-готова 3/4 игры&#10;-маленький фикс">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d39b33f2-c766-4623-9b3c-13642b208595.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d39b33f2-c766-4623-9b3c-13642b208595.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pythonProject5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject5.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/intro.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/enemy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enemy_behaviour.py" beforeDir="false" afterPath="$PROJECT_DIR$/enemy_behaviour.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lvl.py" beforeDir="false" afterPath="$PROJECT_DIR$/lvl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object_creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/object_creator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/render.py" beforeDir="false" afterPath="$PROJECT_DIR$/render.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/bd/player_stats.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/font/bender.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sfx/enemy_attack.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sfx/enemy_death.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sfx/enemy_pain.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sfx/menu_theme.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sfx/player_pain.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sfx/shotgun.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sfx/theme.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/animated_props/burning_barrel/burning_barrel_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/animated_props/burning_barrel/burning_barrel_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/animated_props/burning_barrel/burning_barrel_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/animated_props/red_torch/red_torch_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/animated_props/red_torch/red_torch_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/attack/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/attack/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/attack/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/attack/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/attack/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/death/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/death/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/death/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/death/0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/death/0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/death/0011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/death/0013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/death/0015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/death/0017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/death/0019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/idle/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/idle/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/idle/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/idle/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/idle/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/idle/0006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/idle/0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/idle/0008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/idle/0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/idle/0010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/pain/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/walk/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/walk/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/walk/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/walk/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/fast_boi/walk/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/attack/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/attack/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/attack/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/attack/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/death/0016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/idle/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/idle/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/idle/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/idle/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/idle/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/idle/0006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/idle/0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/idle/0008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/idle/0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/pain/2525.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/walk/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/walk/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/walk/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/enemy/trooper/walk/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/props/christmas_tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/props/dark_column.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/props/dead_body.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/props/dead_tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/props/fridge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/props/last_table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/props/main_hero_car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/props/table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/props/tv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/sprites/weapons/ultra_shotgun/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/531.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/532.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/533.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/534.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/collision_rect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/container_blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/container_green.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/container_violet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/crate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/crosshair.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/damage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/digits/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/ending.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/game_over.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/night_sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/shrine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/textures/tro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/videos/ending.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/data/videos/intro.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/game.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/ПРОЧТИМЕНЯПЕРЕДИГРОЙ.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/DataBaseEditor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/button.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/bd/player_stats.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/font/bender.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sfx/enemy_attack.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sfx/enemy_death.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sfx/enemy_pain.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sfx/menu_theme.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sfx/player_pain.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sfx/shotgun.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sfx/theme.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/animated_props/burning_barrel/burning_barrel_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/animated_props/burning_barrel/burning_barrel_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/animated_props/burning_barrel/burning_barrel_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/animated_props/red_torch/red_torch_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/animated_props/red_torch/red_torch_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/attack/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/attack/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/attack/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/attack/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/attack/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/death/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/death/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/death/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/death/0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/death/0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/death/0011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/death/0013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/death/0015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/death/0017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/death/0019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/idle/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/idle/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/idle/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/idle/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/idle/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/idle/0006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/idle/0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/idle/0008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/idle/0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/idle/0010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/pain/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/walk/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/walk/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/walk/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/walk/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/fast_boi/walk/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/attack/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/attack/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/attack/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/attack/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/death/0016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/idle/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/idle/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/idle/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/idle/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/idle/0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/idle/0006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/idle/0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/idle/0008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/idle/0009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/pain/2525.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/walk/0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/walk/0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/walk/0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/enemy/trooper/walk/0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/props/christmas_tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/props/dark_column.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/props/dead_body.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/props/dead_tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/props/fridge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/props/last_table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/props/main_hero_car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/props/table.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/props/tv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/sprites/weapons/ultra_shotgun/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/531.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/532.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/533.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/534.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/collision_rect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/container_blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/container_green.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/container_violet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/crate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/crosshair.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/damage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/digits/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/ending.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/game_over.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/night_sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/shrine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/textures/tro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/videos/ending.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/data/videos/intro.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/enemy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/enemy_behaviour.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/lvl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/object_creator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/raycasting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/render.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/shotgun.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/sound.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source_code/sprite_object.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +329,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/staspc/PycharmProjects/PyGame project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tema/Documents/GitHub/PyGame_project&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -55,7 +338,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject5" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,6 +375,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject5" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source_code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source_code/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,6 +451,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main_menu" />
         <item itemvalue="Python.2" />
@@ -182,6 +488,12 @@
       <workItem from="1706180900662" duration="23051000" />
       <workItem from="1706276139275" duration="5943000" />
       <workItem from="1706282729499" duration="9312000" />
+      <workItem from="1737838272625" duration="3881000" />
+      <workItem from="1737842192335" duration="8463000" />
+      <workItem from="1737978316646" duration="899000" />
+      <workItem from="1737997287853" duration="10224000" />
+      <workItem from="1738057988165" duration="18147000" />
+      <workItem from="1738180398488" duration="23258000" />
     </task>
     <task id="LOCAL-00001" summary="-альфа версия движка">
       <created>1705686575871</created>
@@ -269,8 +581,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PyGame_project$1.coverage" NAME="1 Coverage Results" MODIFIED="1702391324375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyGame_project$main.coverage" NAME="main Coverage Results" MODIFIED="1737839560023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PyGame_project$main_menu.coverage" NAME="main_menu Coverage Results" MODIFIED="1706301265739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PyGame_project$2.coverage" NAME="2 Coverage Results" MODIFIED="1702391335925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PyGame_project$main.coverage" NAME="main Coverage Results" MODIFIED="1706301945233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyGame_project$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1738222406280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/source_code" />
   </component>
 </project>
